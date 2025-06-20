@@ -1,48 +1,48 @@
 {
-  "ssh": {
-    "authorized_public_keys": [
-      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ... devops@company.com",
-      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ... headoftech@company.com"
-    ]
-  },
-  "web_server": {
-    "target_urls": [
-      "http://localhost",
-      "https://localhost"
-    ]
-  },
-  "ssl": {
-    "domains": [
-      "localhost",
-      "yourdomain.com"
-    ]
-  },
-  "database": {
-    "mysql": {
-      "host": "localhost",
-      "port": 3306
+    "ssh": {
+        "authorized_public_keys": [
+            "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ... devops@company.com",
+            "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQ... headoftech@company.com"
+        ]
     },
-    "postgresql": {
-      "host": "localhost",
-      "port": 5432
+    "web_server": {
+        "target_urls": [
+            "http://localhost",
+            "https://localhost"
+        ]
+    },
+    "ssl": {
+        "domains": [
+            "localhost",
+            "yourdomain.com"
+        ]
+    },
+    "database": {
+        "mysql": {
+            "host": "localhost",
+            "port": 3306
+        },
+        "postgresql": {
+            "host": "localhost",
+            "port": 5432
+        }
+    },
+    "application": {
+        "web_roots": [
+            "/var/www/html",
+            "/usr/share/nginx/html"
+        ],
+        "config_files": [
+            ".env",
+            "config.php",
+            "settings.py"
+        ]
+    },
+    "cloudflare": {
+        "check_proxy": true,
+        "expected_headers": [
+            "cf-ray",
+            "cf-cache-status"
+        ]
     }
-  },
-  "application": {
-    "web_roots": [
-      "/var/www/html",
-      "/usr/share/nginx/html"
-    ],
-    "config_files": [
-      ".env",
-      "config.php",
-      "settings.py"
-    ]
-  },
-  "cloudflare": {
-    "check_proxy": true,
-    "expected_headers": [
-      "cf-ray",
-      "cf-cache-status"
-    ]
-  }
 }

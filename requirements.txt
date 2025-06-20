@@ -1,0 +1,10 @@
+# Core dependencies
+requests>=2.25.0
+
+# Optional database dependencies
+# Uncomment if you need database connection testing
+# pymysql>=1.0.0
+# psycopg2-binary>=2.8.0
+
+# Optional SSL testing (if testssl.sh is not available)
+# pyOpenSSL>=21.0.0
